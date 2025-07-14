@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes floatCloud {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(120%); }
+}
+
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 9999px;
+  opacity: 0.3;
+  animation: floatCloud linear infinite;
+}
